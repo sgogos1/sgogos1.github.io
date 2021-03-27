@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Stavros Alexander Gogos</title>
+	<link rel="stylesheet" href="./stylesheet.css">
+  </head>
+  <body>
+    <header id="top">
+      <h1 class="name">Stavros Alexander Gogos</h1>
+	</header>
+	<nav>
+	  <label for="page-selection">Navigate: </option>
+	  <select id="page-selection" name="page-selection" onchange="location = this.value;">
+	    <option value=""></option>
+	    <option value=#current-position>Current Position</option>
+	    <option value=#education>Education</option>
+	    <option value=#online-resources>Online Resources</option>
+	    <option value=#skills>Skills</option>
+	    <option value=#contact-info>Contact Information</option>
+	  </select>
+	<nav>
+	<main>
+	  <hr>
+	  <section id="current-position">
+		<h3> Current Position </h3>
+	    <span><strong>Title:</strong> Engineer for NIWC Pacific</span>
+	    <br>
+	    <br>
+	    <span><strong>Roles:</strong>
+	    <ul>
+		  <li>Software Developer (Front-End and Application)</li>
+	      <li>Internal Technical Team Deputy Lead</li>
+		  <li>Space Software Toolbox Lead</li>
+	    </ul>
+	  </section>
+	  <hr>
+	  <section id="education">
+	    <h3>Education</h3>
+	    <span><strong>Degree: </strong>Bachelor's of Science (B.S.)</span><br>
+	    <span><strong>Focus: </strong>Mechanical Engineering</span><br>
+	    <span><strong>Institution: </strong>University of Nebraska-Lincoln</span><br>
+	    <span><strong>Attended: </strong>2013 - 2018</span>
+	    <br><br><hr>
+	  </section>
+	  <section id="online-resources">
+        <h3>Online Resources</h3>
+	    <a target="_blank" href="https://www.linkedin.com/in/stavros-gogos-35208aa4/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAABYUjW4BQH8a2CU8HPTk_5YuIQQhVpiJEGk,1574880075914)/"><img src="https://library.kissclipart.com/20180903/rrq/kissclipart-documents-icon-clipart-computer-icons-document-24b69b7bcc6a9942.jpg" width="100" height="100" alt="Resume"></a>
+	    <a target="_blank" href="https://www.linkedin.com/in/stavros-gogos-35208aa4"><img src="https://dwglogo.com/wp-content/uploads/2020/06/Linkedin_symbol_transparent.png" width="100" height="100"></a>
+      </section>
+	  <hr>
+	  <section id="skills">
+  	    <h3>Skills</h3>
+	    <ul>
+	      <li><strong>Object-Oriented Programming:</strong> C++, MATLAB, Python, and Java</li>
+	      <li><strong>Front-End Development:</strong> HTML, JavaScript</li>
+	      <li><strong>Operating Systems:</strong> Windows, Linux (Ubuntu and CentOS), and iOS</li>
+	      <li><strong>3D Modelling/Drafting:</strong> AutoCAD, SolidWorks, and Sketchup</li>
+	    </ul>
+	  </section>  
+	</main>
+	<hr>
+	<footer>
+	  <h3 id="contact-info">Contact Information</h3>
+	  <span>Please direct all questions or comments to <a href="mailto:sgogos1@gmail.com">sgogos1@gmail.com</a>.</span>
+	  <hr>
+	  <span><strong>Time of Access: </strong></span>
+	  <span id="date-of-access"></span>
+	  <script>
+	    let d = new Date();
+		document.getElementById("date-of-access").innerHTML = d;
+	  </script>
+	  <br>
+	  <br>
+	  <a href=#top>Jump to Top of Page</a>
+	</footer>
+  </body>
+</html>
