@@ -21,7 +21,7 @@ div.header-container {
 
 div.header-title {
 	height: fit-content;
-	font-size: 30px;
+	font-size: 2vw;
 	margin: 0;
 	bottom: 0;
 }
@@ -58,7 +58,7 @@ h2 {
 	margin: 0;
 	padding-top: 250px;
 	padding-bottom: 10px;
-	font-size: 40px;
+	font-size: 2vw;
 }
 
 /* Links and icons in a block underneath the text of the header.
