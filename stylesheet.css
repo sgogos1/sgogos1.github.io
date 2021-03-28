@@ -102,6 +102,18 @@ h2 {
 	font-size: 6vmax;
 }
 
+footer {
+	height: 5vmax;
+	width: 100%;
+	border-top: 2px gray solid;
+	background-color: lightgrey;
+}
+
+div.copyright {
+	padding-top: 0.5vmax;
+	text-align: center;
+}
+
 /* Links and icons in a block underneath the text of the header.
 /* Links and icons to social media, websites, etc. are part of the navigate header that sticks to the top of the page.
 /* Navigate part of the header sticks to the top of the page as you scroll down. Rest of header is left behind.
