@@ -12,11 +12,26 @@ div.header-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 9vw;
+	height: 11vmax;
 	background: lightgrey;
 	margin: 0;
 	padding: 0;
-	border-bottom: 3px darkgray solid;
+	border-bottom: 2px gray solid;
+}
+
+div.navigation-button{
+	align-items: right;
+	justify-content: right;
+	display: flex;
+}
+
+div.navigation-button button {
+	width: 5vmax;
+	border: none;
+	background: none;
+	right: 0;
+	bottom: 0;
+	position: absolute;
 }
 
 div.header-title {
@@ -26,8 +41,12 @@ div.header-title {
 	text-align: center;
 }
 
+.nav-button-clicked {
+	transform: rotate(180deg);
+}
+
 h1 {
-	font-size: 5vw;
+	font-size: 8vmin;
 	margin: 0;
 }
 
@@ -36,23 +55,39 @@ ul {
 	justify-content: center;
 	display: flex;
 	list-style-type: none;
-	margin-top: 2%;
-	margin-bottom: 0;
+	padding: 0;
+	margin: 0;
 }
 
-li {
+ul.profile-links li {
 	display: inline;
-	padding-left: 5px;
+	padding-left: 1vw;
 	float: left;
 }
 
 ul.profile-links img {
-	height: 2vw;
-	width: 2vw;
+	height: 3vmax;
+	width: 3vmax;
+}
+
+nav.page-navigation {
+	display: none;
+	background-color: lightgray;
+	padding-top: 1vmax;
+	height: 4vmax;
+	font-size: 3vmin;
+	border-bottom: 2px gray solid;
+}
+
+nav.page-navigation li {
+	display: inline;
+	padding-left: 2vw;
+	float: left;
+	font-weight: bold;
 }
 
 .main{
-	height: 10vh;
+	height: 60vmax;
 	width: 100%;
 	border: 0;
 	margin: 0;
@@ -62,9 +97,9 @@ ul.profile-links img {
 
 h2 {
 	margin: 0;
-	padding-top: 5vh;
-	padding-bottom: 0.5vh;
-	font-size: 6vw;
+	padding-top: 26vmax;
+	padding-bottom: 0.5vmax;
+	font-size: 6vmax;
 }
 
 /* Links and icons in a block underneath the text of the header.

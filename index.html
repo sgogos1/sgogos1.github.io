@@ -10,7 +10,10 @@
   </head>
   <body class="body">
     <header id="header">
-	  <div class="header-container">
+	  <div class="header-container" id="header-container">
+		<div class="navigation-button">
+     	  <button id="nav-button"><img src="./assets/images/expand-arrow.png" style="width: 50%;"></button>
+		</div>
 		<div class="header-title">
 			<ul class="profile-links">
 				<li><a href="https://github.com/sgogos1/"><img src="./assets/images/platforms/github-light-theme.png"/></a></li>
@@ -21,9 +24,17 @@
 			</ul>
           <h1>Stavros Gogos</h1>
 		</div>
-		<img src="assets/images/avatar-leaning.png" style="height: 9vw;"/>
+		<img src="assets/images/avatar-leaning.png" style="height: 100%;"/>
 	  </div>
 	</header>
+	<nav class="page-navigation" id="page-navigation">
+		<ul>
+			<li>Experience</li>
+			<li>Education</li>
+			<li>Skills</li>
+			<li>Collaborate</li>
+		</ul>
+	</nav>
 	<main class="main">
 		<h2>Coming Soon!</h2>
 		<span>Until then <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here's</a> some entertainment!</span>
@@ -85,4 +96,5 @@
 	  <a href=#header>Jump to Top of Page</a>
 	</footer> -->
   </body>
+  <script src="./assets/js/client.js"></script>
 </html>
