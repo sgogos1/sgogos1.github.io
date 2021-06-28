@@ -5,108 +5,285 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <!-- <link rel="shortcut icon" href="assets/favicon.ico"> -->
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" media="all">    
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" media="all"/>    
+	<link rel="stylesheet" href="pseudos-stylesheet.css" type="text/css" media="all"/>
 	<title>Stavros A. Gogos</title>
   </head>
-  <body class="body">
-    <header id="header">
-	  <div class="header-container" id="header-container">
-		<div class="navigation-button">
-     	  <button id="nav-button"><img src="./assets/images/expand-arrow.png" style="width: 50%;"></button>
+  <body class="landscape">
+	  	<div id="header-nav-container">
+			<header id="header">
+				<div id="left-header-container">
+					<div id="header-socials-container">
+						<div id="header-image-container">
+							<img id="header-image" src="assets/images/stavros-profile-avatar.png"/>
+						</div>
+						<div id="header-social-links">
+							<ul class="profile-links">
+								<li>
+									<a href="https://github.com/sgogos1/" target="_blank" rel="norefferer noopener">
+										<img src="./assets/images/platforms/github-light-theme.svg"/>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/stavocados/" target="_blank" rel="norefferer noopener">
+										<img src="./assets/images/platforms/instagram-light-theme.svg"/>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/stavros-gogos/" target="_blank" rel="norefferer noopener">
+										<img src="./assets/images/platforms/linkedin-light-theme.svg"/>
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/stavocados" target="_blank" rel="norefferer noopener">
+										<img src="./assets/images/platforms/twitter-light-theme.svg"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="header-text">
+						<span id="name">Stavros Gogos</span>
+						<div id="location">
+							<div class="location"></div>
+							<span id="location-text">San Diego, California, USA</span>
+						</div>
+						<div id="work">
+							<span id="work-text">
+								<img class="header-text-symbol" src="assets/images/niwc-white-text.png">
+								 NIWC Pacific
+							</span>
+						</div>
+						<div id="job">
+							<span id="job-text">
+								<span class="header-text-symbol">&#9998;&nbsp;</span> Software Engineer</span>
+						</div>
+					</div>
+				</div>
+				<div id="right-header-container">
+					<div id="navigation-button">
+						<div id="navigation-button-element" class="navigation-button"></div>
+					</div>
+				</div>
+			</header>
+			<nav id="page-navigation" class="page-navigation-closed">
+				<ul id="page-navigation-list">
+					<li class="page-navigation-element">
+						<a href="#experience">Experience</a>
+					</li>
+					<li class="page-navigation-element">Education</li>
+					<li class="page-navigation-element">Skills</li>
+					<li class="page-navigation-element">Collaborate</li>
+				</ul>
+			</nav>
 		</div>
-		<div class="header-title">
-			<ul class="profile-links">
-				<li><a href="https://github.com/sgogos1/"><img src="./assets/images/platforms/github-light-theme.png"/></a></li>
-				<li><a href="https://www.instagram.com/stavocados/"><img src="./assets/images/platforms/instagram-light-theme.png"/></a></li>
-				<li><a href="https://www.linkedin.com/in/stavros-gogos/"><img src="./assets/images/platforms/linkedin-light-theme.png"/></a></li>
-				<li><a href="https://open.spotify.com/user/1297568969"><img src="./assets/images/platforms/spotify-light-theme.png"/></a></li>
-				<li><a href="https://twitter.com/stavocados"><img src="./assets/images/platforms/twitter-light-theme.png"/></a></li>
+		<main>
+			<h2 id="experience" class="main-sub-header">
+				Where I've Worked
+				<div class="inline-horizontal-rule"></div>
+			</h2>
+			<div id="experience-container">
+				<ul id="experience-timeline">
+					<li id="niwc-tl-btn" class="active-timeline-element">NIWC Pacific</li>
+					<li id="spa-tl-btn" class="inactive-timeline-element">Systems Planning and Analysis</li>
+					<li id="ncmn-tl-btn" class="inactive-timeline-element">Nebraska Center for Materials & Nanoscience</li>
+					<li id="spa-2-tl-btn" class="inactive-timeline-element">Systems Planning and Analysis</li>
+					<li id="nmrl-tl-btn" class="inactive-timeline-element">Nano & Microsystems Research Lab</li>
+				</ul>
+				<div class="company-container flex-displayed" id="niwc-1">
+					<div class="company-info-container">
+						<div class="text-experience-container">
+							<p class="company-title">
+								Software Engineer |
+								<a class="company-link" href="https://niwcpacific.navy.mil/" target="_blank" rel="noopener norefferer" >
+									NIWC Pacific
+								</a>
+							</p>
+							<p class="company-sub-title">October 2020 - Present</p>
+						</div>
+						<div class="company-text-container">
+							<ul class="duties-experience-container">
+								<p class="company-text-subheader">Accomplishments</p>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Co-manage internal and external technical team to ensure all products being developed are on track and will work in an integrated environment.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Developed a Web Application built on Node.Js, Express, TypeScript, JavaScript, HTML, and CSS.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Produced C++ plugins that leverage classes as blocks used in a block diagram-like software.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Created models of satellite constellations and ground networks using Python to simulate their sensing and communication capabilities.</li>
+							</ul>
+							<ul class="skills-container">
+								<p class="company-text-subheader">Skills</p>
+								<div class="skill-list">
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>C++</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Python</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>TypeScript</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>JavaScript</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Node.Js & Express</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>HTML & CSS</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>DIS</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Git</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Atlassian Toolset</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>RHEL & Ubuntu</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="company-container not-displayed" id="spa-1">
+					<div class="company-info-container">
+						<div class="text-experience-container">
+							<p class="company-title">
+								Software & Systems Engineer | 
+								<a class="company-link" href="https://spa.com" target="_blank" rel="noopener norefferer">
+									SPA Inc.
+								</a>
+							</p>
+							<p class="company-sub-title">January 2019 - October 2020</p>
+						</div>
+						<div class="company-text-container">
+							<ul class="duties-experience-container">
+								<p class="company-text-subheader">Accomplishments</p>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Managed internal developers to provide integrated and high-quality products.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Developed multi-threaded C++ plugin integrated with DIS, Systems Toolkit, and internal software tools.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Created models of satellite constellations and ground networks using Python to simulate their sensing and communication capabilities.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Acted as on-base representative and POC at NIWC Pacific for SPA's contracted team.</li>
+							</ul>
+							<ul class="skills-container">
+								<p class="company-text-subheader">Skills</p>
+								<div class="skill-list">
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>C++</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Systems Toolkit</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>DIS</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Atlassian Toolset</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Python</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Git</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="company-container not-displayed" id="ncmn">
+					<div class="company-info-container">
+						<div class="text-experience-container">
+							<p class="company-title">
+								Undergraduate Researcher |
+								<a class="company-link" href="https://ncmn.unl.edu" target="_blank" rel="noopener norefferer">
+									NCMN
+								</a>
+							</p>
+							<p class="company-sub-title">August 2018 - October 2018</p>
+						</div>
+						<div class="company-text-container">
+							<ul class="duties-experience-container">
+								<p class="company-text-subheader">Accomplishments</p>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Performed qualitative and quantitative experiments on tension strength of various polymer microfibers.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Utilized Scanning Electron Microscopy (SEM) to take pictures of polymer microfibers post-testing.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Executed comprehensive analysis to uncover statistical trends in polymer behaviors under tension.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Presented findings on a weekly basis to the research group.</li>
+							</ul>
+							<ul class="skills-container">
+								<p class="company-text-subheader">Skills</p>
+								<div class="skill-list">
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Tension Testing</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Statistical Analysis</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>SEM</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Microsoft Office</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Repetitive Tasking</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="company-container not-displayed" id="spa-2">
+					<div class="company-info-container">
+						<div class="text-experience-container">
+							<p class="company-title">
+								Systems Engineer Intern |							
+								<a class="company-link" href="https://spa.com" target="_blank" rel="noopener norefferer">
+									SPA Inc.
+								</a>
+							</p>
+							<p class="company-sub-title">May 2017 - August 2017, May 2018 - August 2018</p>
+						</div>
+						<div class="company-text-container">
+							<ul class="duties-experience-container">
+								<p class="company-text-subheader">Accomplishments</p>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Created behavior diagrams used to create models of various types of vehicles.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Organized a Table Top Exercise with DoD operators and technologists to align development across the project.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Performed extensive research into the capabilities of current and future DOD platforms.</li>
+							</ul>
+							<ul class="skills-container">
+								<p class="company-text-subheader">Skills</p>
+								<div class="skill-list">
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Literature Review</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Microsoft Office</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Research</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Event Planning</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Detail Orientation</li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="company-container not-displayed" id="nmrl">
+					<div class="company-info-container">
+						<div class="text-experience-container">
+							<p class="company-title">
+								Undergraduate Researcher |						
+								<a class="company-link" href="https://nmrl.unl.edu" target="_blank" rel="noopener norefferer">
+									NMRL
+								</a>
+							</p>
+							<p class="company-sub-title">June 2015 - September 2016</p>
+						</div>
+						<div class="company-text-container">
+							<ul class="duties-experience-container">
+								<p class="company-text-subheader">Accomplishments</p>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Performed quantitative experimentation on the impact of the Leidenfrost effect on functionalized surfaces.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Executed qualitative research on the effect of pool boiling on various functionalized surfaces.</li>
+								<li class="duty-info"><span class="experience-bp">&#10061; </span>Presented analysis on projects on a weekly basis to the laboratory group.</li>
+							</ul>
+							<ul class="skills-container">
+								<p class="company-text-subheader">Skills</p>
+								<div class="skill-list">
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Microsoft Office</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Scientific Imaging</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Research</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Presenting</li>
+									<li class="skill-info"><span class="experience-bp">&#10061; </span>Statistical Analysis</li>
+
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="copyright">
+				<span>©2021 Stavros Gogos</span>
+			</div>
+			<ul class="footer-links">
+				<li>
+					<a href="https://github.com/sgogos1/" target="_blank" rel="norefferer noopener">
+						<img src="./assets/images/platforms/github-light-theme.svg"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/stavocados/" target="_blank" rel="norefferer noopener">
+						<img src="./assets/images/platforms/instagram-light-theme.svg"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/stavros-gogos/" target="_blank" rel="norefferer noopener">
+						<img src="./assets/images/platforms/linkedin-light-theme.svg"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/stavocados" target="_blank" rel="norefferer noopener">
+						<img src="./assets/images/platforms/twitter-light-theme.svg"/>
+					</a>
+				</li>
 			</ul>
-          <h1>Stavros Gogos</h1>
-		</div>
-		<img src="assets/images/avatar-leaning.png" style="height: 100%;"/>
-	  </div>
-	</header>
-	<nav class="page-navigation" id="page-navigation">
-		<ul>
-			<li>Experience</li>
-			<li>Education</li>
-			<li>Skills</li>
-			<li>Collaborate</li>
-		</ul>
-	</nav>
-	<main class="main">
-		<h2>Coming Soon!</h2>
-		<span>Until then <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here's</a> some entertainment!</span>
-	</main>
-	<footer>
-		<div class="copyright">
-			<span>©2021 by Stavros Gogos</span>
-		</div>
-		<ul class="footer-links">
-			<li><a href="https://github.com/sgogos1/"><img src="./assets/images/platforms/github-light-theme.png"/></a></li>
-			<li><a href="https://www.instagram.com/stavocados/"><img src="./assets/images/platforms/instagram-light-theme.png"/></a></li>
-			<li><a href="https://www.linkedin.com/in/stavros-gogos/"><img src="./assets/images/platforms/linkedin-light-theme.png"/></a></li>
-			<li><a href="https://open.spotify.com/user/1297568969"><img src="./assets/images/platforms/spotify-light-theme.png"/></a></li>
-			<li><a href="https://twitter.com/stavocados"><img src="./assets/images/platforms/twitter-light-theme.png"/></a></li>
-		</ul>
-	</footer>
-	<!-- <nav>
-	  <label for="page-selection">Navigate: </option>
-	  <select id="page-selection" name="page-selection" onchange="location = this.value;">
-	    <option value=""></option>
-	    <option value=#current-position>Current Position</option>
-	    <option value=#education>Education</option>
-	    <option value=#online-resources>Online Resources</option>
-	    <option value=#skills>Skills</option>
-	    <option value=#contact-info>Contact Information</option>
-	  </select>
-	<nav>
-	<main>
-	  <section id="current-position">
-		<h3> Current Position </h3>
-	    <span><strong>Title:</strong> Engineer for NIWC Pacific</span>
-	    <br>
-	    <br>
-	    <span><strong>Roles:</strong>
-	    <ul>
-		  <li>Software Developer (Front-End and Application)</li>
-	      <li>Internal Technical Team Deputy Lead</li>
-		  <li>Space Software Toolbox Lead</li>
-	    </ul>
-	  </section>
-	  <section id="education">
-	    <h3>Education</h3>
-	    <span><strong>Degree: </strong>Bachelor's of Science (B.S.)</span><br>
-	    <span><strong>Focus: </strong>Mechanical Engineering</span><br>
-	    <span><strong>Institution: </strong>University of Nebraska-Lincoln</span><br>
-	    <span><strong>Attended: </strong>2013 - 2018</span>
-	    <br><br><hr>
-	  </section>
-	  <section id="skills">
-  	    <h3>Skills</h3>
-	    <ul>
-	      <li><strong>Object-Oriented Programming:</strong> C++, MATLAB, Python, and Java</li>
-	      <li><strong>Front-End Development:</strong> HTML, JavaScript</li>
-	      <li><strong>Operating Systems:</strong> Windows, Linux (Ubuntu and CentOS), and iOS</li>
-	      <li><strong>3D Modelling/Drafting:</strong> AutoCAD, SolidWorks, and Sketchup</li>
-	    </ul>
-	  </section>  
-	</main>
-	<footer>
-	  <h3 id="contact-info">Contact Information</h3>
-	  <span>Please direct all questions or comments to <a href="mailto:sgogos1@gmail.com">sgogos1@gmail.com</a>.</span>
-	  <hr>
-	  <span><strong>Time of Access: </strong></span>
-	  <span id="date-of-access"></span>
-	  <script>
-	    let d = new Date();
-		document.getElementById("date-of-access").innerHTML = d;
-	  </script>
-	  <br>
-	  <br>
-	  <a href=#header>Jump to Top of Page</a>
-	</footer> -->
+		</footer>
   </body>
   <script src="./assets/js/client.js"></script>
 </html>

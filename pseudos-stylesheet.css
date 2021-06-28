@@ -1,0 +1,111 @@
+.landscape {
+    --top-nav-button-width: 2vmax;
+    --middle-nav-button-width: 1.33333vmax;
+    --bottom-nav-button-width: 0.66667vmax;
+    --nav-button-width: 2vmax;
+    --nav-button-height: 0.15vmax;
+    --horizontal-line-width: 60%;
+}
+
+.portrait {
+    --top-nav-button-width: 3vmax;
+    --middle-nav-button-width: 2vmax;
+    --bottom-nav-button-width: 1vmax;
+    --nav-button-width: 3vmax;
+    --nav-button-height: 0.25vmax;
+    --horizontal-line-width: 0;
+}
+
+/* ----------- Location Icon -------------- */
+
+.location {
+    width: 1vmax;
+    height: fit-content;
+    position: absolute;
+}
+
+.location::before {
+    content: "";
+    background-color: darkslategray;
+    width: 0.4vmax;
+    position: absolute;
+    height: 0.4vmax;
+    left: 0.3vmax;
+    top: 0.25vmax;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.location::after {
+    content: "";
+    background-color: lightskyblue;
+    width: 1vmax;
+    height: 1vmax;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+}
+
+
+/* ----------- Navigation Button -------------- */
+
+.navigation-button {
+    position: relative;
+    width: var(--middle-nav-button-width);
+    height: var(--nav-button-height);
+    background-color: RGB(220, 220, 220);
+    transition: all 0.25s;
+}
+
+.navigation-button::before {
+    content: "";
+    position: absolute;
+    width: var(--top-nav-button-width);
+    height: var(--nav-button-height);
+    background-color: RGB(220, 220, 220);
+    transition: all 0.25s;
+}
+
+.navigation-button::after {
+    content: "";
+    position: absolute;
+    width: var(--bottom-nav-button-width);
+    height: var(--nav-button-height);
+    background-color: RGB(220, 220, 220);
+    transition: all 0.25s;
+}
+
+.navigation-button::before {
+    top: -0.65vmax;
+}
+
+.navigation-open.navigation-button {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: var(--nav-button-width);
+}
+
+.navigation-open.navigation-button::before, .navigation-open.navigation-button::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: var(--nav-button-width);
+}
+
+.navigation-button::after {
+    top: 0.65vmax;
+}
+
+/* ----------------- Inline Horizontal Rule --------------- */
+.inline-horizontal-rule {
+    margin-left: 2.5%;
+    height: 1px;
+    width: var(--horizontal-line-width);
+    background-color: RGB(220, 220, 220);
+    opacity: 0.3;
+}
