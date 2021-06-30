@@ -103,7 +103,6 @@
 
 /* ----------------- Inline Horizontal Rule --------------- */
 .inline-horizontal-rule {
-    margin-left: 2.5%;
     height: 1px;
     width: var(--horizontal-line-width);
     background-color: RGB(220, 220, 220);
